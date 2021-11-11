@@ -26,21 +26,10 @@
       
 
       <div class="nav-menu">
-        <div v-for="image in images" class="thumb">
-          <img :class="{active: (counter === 0)}" class="nav-image" :src="images[counter]" alt="">
+        <div v-for="(image, imageIndex) in images" class="thumb">
+          <img :class="{active: (counter === imageIndex)}" class="nav-image" :src="image" alt="">
         </div>
-        <!-- <div class="thumb">
-          <img :class="{active: (counter === 1)}"  class="nav-image" src="img/02.jpg" alt="">
-        </div>
-        <div class="thumb">
-          <img :class="{active: (counter === 2)}"  class="nav-image" src="img/03.jpg" alt="">
-        </div>
-        <div class="thumb">
-          <img :class="{active: (counter === 3)}"  class="nav-image" src="img/04.jpg" alt="">
-        </div>
-        <div class="thumb">
-          <img :class="{active: (counter === 4)}"  class="nav-image" src="img/05.jpg" alt="">
-        </div> -->
+      
         <div @click="prevSlide()" id="btn-up"><i class="fas fa-chevron-up"></i></div>
         <div @click="nextSlide()"  id="btn-down"><i class="fas fa-chevron-down"></i></div>
       </div>
