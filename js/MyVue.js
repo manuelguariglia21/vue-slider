@@ -22,6 +22,17 @@ const app = new Vue({
     ],
   },
 
+  
+
+  mounted(){
+    //al caricamento dell'app
+    console.log('mounted');
+    setInterval(() => {
+      this.nextSlide();
+    }, 5000)
+
+  },
+
   methods:{
 
     nextSlide(){
