@@ -26,20 +26,20 @@
       
 
       <div class="nav-menu">
-        <div class="thumb" :class="{active: (counter === 0)}">
-          <img class="nav-image active" src="img/01.jpg" alt="">
+        <div class="thumb">
+          <img :class="{active: (counter === 0)}" class="nav-image" src="img/01.jpg" alt="">
         </div>
-        <div class="thumb" :class="{active: (counter === 1)}">
-          <img class="nav-image" src="img/02.jpg" alt="">
+        <div class="thumb">
+          <img :class="{active: (counter === 1)}"  class="nav-image" src="img/02.jpg" alt="">
         </div>
-        <div class="thumb" :class="{active: (counter === 2)}">
-          <img class="nav-image" src="img/03.jpg" alt="">
+        <div class="thumb">
+          <img :class="{active: (counter === 2)}"  class="nav-image" src="img/03.jpg" alt="">
         </div>
-        <div class="thumb" :class="{active: (counter === 3)}">
-          <img class="nav-image" src="img/04.jpg" alt="">
+        <div class="thumb">
+          <img :class="{active: (counter === 3)}"  class="nav-image" src="img/04.jpg" alt="">
         </div>
-        <div class="thumb" :class="{active: (counter === 4)}">
-          <img class="nav-image" src="img/05.jpg" alt="">
+        <div class="thumb">
+          <img :class="{active: (counter === 4)}"  class="nav-image" src="img/05.jpg" alt="">
         </div>
         <div @click="prevSlide()" id="btn-up"><i class="fas fa-chevron-up"></i></div>
         <div @click="nextSlide()"  id="btn-down"><i class="fas fa-chevron-down"></i></div>
